@@ -1,10 +1,10 @@
 <p align="center">
-	<img src="screenshot.png" alt="Layar Tancap">
+	<img src="screenshot.png" alt="Calo">
 </p>
 
-# 🎬 Layar Tancap
+# 🎫 Calo
 
-a Simple Movies REST API Plugin
+a Simple ticketing WordPress plugin.
 
 ## 🔨 Installation
 
@@ -12,21 +12,6 @@ a Simple Movies REST API Plugin
 - NPM Install : `npm i`
 - Grunt Build : `npx grunt`
   - Refactor Dot Framework : `grunt shell:dot_refactor`
-
-## 🚦 API Endpoint
-
-- `GET` `/wp-json/rymera/v1/movies?`
-  - `page=` : `1`
-  - `offset=` : `0`
-  - `posts_per_page=` : `-1`
-  - `category=` : `0`
-  - `orderby=` : `date`
-  - `order=` : `DESC`
-  - `include=` : `7,10,12`
-  - `exclude=` : `7,10,12`
-  - `meta_key=` : `year`
-  - `meta_value=` : `2007`
-  - `suppress_filters=` : `true`
 
 ## 🎉 Credits
 

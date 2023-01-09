@@ -1,0 +1,19 @@
+{
+  "name": "muhammadsundoro/layar-tancap",
+  "description": "a Simple Movies REST API Plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Agung Sundoro",
+      "email": "muhagung2001@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LayarTancap\\": "src"
+    }
+  },
+  "require": {
+    "artistudioxyz/dot-framework": "v0.1.2"
+  }
+}

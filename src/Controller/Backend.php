@@ -58,6 +58,7 @@ class Backend extends Controller {
 			in_array( $screen->base, $screens ) ||
 			( isset($post->post_type) && $post->post_type === 'movie' && in_array($screen->pagenow, $allowedPage) )
 		) {
+			echo 'MASUK';
 			/** Load Core Vendors */
 			wp_enqueue_script('jquery');
 

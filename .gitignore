@@ -1,0 +1,14 @@
+# IDEs
+/.idea
+/.vscode
+
+# Vendors
+/vendor
+/node_modules
+
+# Extras
+.env
+.DS_STORE
+
+# Builds
+/assets/build

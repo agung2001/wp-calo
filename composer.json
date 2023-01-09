@@ -1,6 +1,6 @@
 {
   "name": "muhammadsundoro/layar-tancap",
-  "description": "a Simple Movies REST API Plugin",
+  "description": "a Simple ticketing system WordPress plugin",
   "license": "MIT",
   "authors": [
     {
@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "LayarTancap\\": "src"
+      "Calo\\": "src"
     }
   },
   "require": {

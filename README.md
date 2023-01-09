@@ -4,7 +4,7 @@
 
 # 🎫 Calo
 
-a Simple ticketing WordPress plugin.
+a Simple ticketing system WordPress plugin.
 
 ## 🔨 Installation
 

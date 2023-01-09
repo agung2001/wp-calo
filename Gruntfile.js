@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 				command: `aspri --wp-refactor --path ${path.resolve(
 					__dirname,
 					'vendor/artistudioxyz/dot-framework'
-				)} --from Dot --to LayarTancap --type plugin && composer dump-autoload`,
+				)} --from Dot --to Calo --type plugin && composer dump-autoload`,
 			},
 		},
 

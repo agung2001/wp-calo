@@ -1,5 +1,5 @@
 {
-  "name": "Layar Tancap",
+  "name": "Calo",
   "version": "0.0.1",
   "production": false,
   "enableHooks": [
@@ -7,34 +7,34 @@
     "filter",
     "shortcode"
   ],
-  "description": "a Simple Movies REST API Plugin.",
+  "description": "a Simple ticketing system WordPress plugin.",
   "default": {
-    "layartancap_animation": {
+    "calo_animation": {
       "enable": 1,
       "elements": {
         "logo": "bounceIn",
         "tab": "heartBeat",
         "content": "fadeIn",
-        "layartancap_active": "fadeIn",
-        "layartancap_inactive": "fadeOut"
+        "calo_active": "fadeIn",
+        "calo_inactive": "fadeOut"
       }
     },
-    "layartancap_assets": {
+    "calo_assets": {
       "backend": {
-        "layartancap-fontawesome-css": {
+        "calo-fontawesome-css": {
           "status": true,
           "type": "css",
           "src": "vendor/fontawesome/css/all.min.css"
         }
       },
       "frontend": {
-        "layartancap-fontawesome-css": {
+        "calo-fontawesome-css": {
           "status": true,
           "type": "css",
           "src": "vendor/fontawesome/css/all.min.css"
         }
       }
     },
-    "layartancap_hooks": []
+    "calo_hooks": []
   }
 }

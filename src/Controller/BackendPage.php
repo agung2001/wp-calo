@@ -13,7 +13,6 @@ namespace Calo\Controller;
 
 use Calo\View;
 use Calo\WordPress\Hook\Action;
-use Calo\WordPress\Page\Page;
 use Calo\WordPress\Page\SubmenuPage;
 
 class BackendPage extends Controller {

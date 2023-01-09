@@ -38,23 +38,6 @@ class BackendPage extends Controller {
 
 	/**
 	 * Admin Menu Setting
-	 */
-	public function admin_menu_setting(){
-
-
-		/** Set Page */
-		$page = new SubmenuPage();
-		$page->setParentSlug( 'options-general.php' );
-		$page->setPageTitle(CALO_NAME);
-		$page->setMenuTitle(CALO_NAME);
-		$page->setCapability( 'manage_options' );
-		$page->setMenuSlug( $slug );
-		$page->setFunction( array( $this, 'page_setting' ) );
-		$page->build();
-	}
-
-	/**
-	 * Admin Menu Setting
 	 *
 	 * @backend @submenu setting
 	 * @return  void

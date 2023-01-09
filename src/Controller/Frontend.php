@@ -51,15 +51,14 @@ class Frontend extends Controller {
 	public function frontend_enequeue() {
 		global $post;
 		define( 'CALO_SCREEN', json_encode( $this->WP->getScreen() ) );
+		$default = $this->Framework->getConfig()->default;
 		$config  = $this->Framework->getConfig()->options;
-		$screen  = $this->WP->getScreen();
-		$slug    = sprintf( '%s-setting', $this->Framework->getSlug() );
 
 		/** Load Vendors */
 		/** Load Core Vendors */
 		wp_enqueue_script('jquery');
 
-		$this->WP->enqueue_assets( $config->calo_assets->backend );
+		$this->WP->enqueue_assets( $default->calo_assets->frontend );
 		$this->WP->wp_enqueue_style( 'animatecss', 'vendor/animatecss/animate.min.css' );
 
 		/** Load Plugin Assets */

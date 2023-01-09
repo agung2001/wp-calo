@@ -28,6 +28,11 @@
         }
       },
       "frontend": {
+        "calo-chart-js": {
+          "status": true,
+          "type": "js",
+          "src": "vendor/chartjs/chart.js"
+        },
         "calo-fontawesome-css": {
           "status": true,
           "type": "css",

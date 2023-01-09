@@ -7,7 +7,7 @@
 				<div class="profile px-6 py-6 border-b border-gray-100 flex">
 					<img src="http://1.gravatar.com/avatar/d43b216a46f3d368e0da3f48ea70210d?s=64&d=mm&r=g" class="w-12 h-12" alt="Sara">
 					<div class="ml-2 flex flex-col">
-						<span class="text-sm font-semibold">Welcome Sara</span>
+						<span class="text-sm font-semibold">Welcome Agung</span>
 						<span class="text-xs text-gray-400">
 							Admin
 						</span>
@@ -37,7 +37,7 @@
 
 		</div>
 		<div class="m-4 md:m-0 md:col-span-9">
-			<!-- Start Profile -->
+			<!-- Start Content -->
 			<div class="shadow-md shadow-gray-200/50 rounded-md bg-white p-4 md:p-12">
 
 				<div class="bg-gray-50 px-8 py-6 rounded-md mb-12 flex flex-col md:block gap-y-4 md:gap-y-0">
@@ -55,7 +55,7 @@
 					</div>
 				</div>
 
-				<div class="grid grid-cols-12 gap-4">
+				<div class="grid grid-cols-12 gap-4 pb-6">
 
 					<div class="col-span-12 md:col-span-8">
 
@@ -157,7 +157,86 @@
 				</div>
 
 			</div>
-			<!-- End Profile -->
+
+			<div class="grid grid-cols-12 gap-4 pb-6">
+
+				<div class="col-span-12 md:col-span-8">
+
+					<div class="rounded-md border border-gray-100 divide-y divide-gray-100">
+						<div class="px-6 py-4 font-semibold">
+							Total number of Ticket Sold
+						</div>
+
+						<div class="w-full">
+							<canvas id="chart" class="w-full p-6" style="max-height: 400px;"></canvas>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-span-12 md:col-span-4 rounded-md border border-gray-100">
+
+					<div class="divide-y divide-gray-100">
+						<div class="px-6 py-4 font-semibold">
+							Payment
+						</div>
+
+						<div class="p-6">
+							<div class="flex justify-center items-center w-5/6 mx-auto pb-6">
+								<svg viewBox="0 0 36 36" class="circular-chart">
+									<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+									<path class="circle stroke-sky-400" stroke-dasharray="67, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+									<text x="18" y="20.35" class="percentage">+67%</text>
+								</svg>
+							</div>
+
+							<div class="flex justify-between">
+								<div class="border-l-4 pl-3 flex flex-col text-xs" style="border-color: #1f1671;">
+									<span>380</span>
+									<span class="text-gray-300">Paid</span>
+								</div>
+								<div class="border-l-4 pl-3 flex flex-col text-xs" style="border-color: #4f78e0;">
+									<span>250</span>
+									<span class="text-gray-300">Unpaid</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- End Content -->
 		</div>
 	</div>
 </div>
+
+<script>
+	var ctx = document.getElementById("chart").getContext("2d");
+
+	/*** Gradient ***/
+	var gradient = ctx.createLinearGradient(0, 0, 0, 400);
+	gradient.addColorStop(0, 'rgba(79,120,224,0.3)');
+	gradient.addColorStop(1, 'rgba(255,255,255,0.25)');
+	/***************/
+
+	var data = {
+		labels : ["January","February","March","April","May","June","July"],
+		datasets: [
+			{
+				fillColor : gradient,
+				strokeColor : "#4f78e0",
+				data : [25.0,32.4,22.2,39.4,34.2,22.0,23.2,24.1,20.0,18.4,19.1,17.4]
+			}
+		]
+	};
+
+	var options = {
+		responsive: true,
+		datasetStrokeWidth : 3,
+		pointDotStrokeWidth : 0,
+		pointDotRadius: 0,
+	};
+
+	var myLineChart = new Chart(ctx).Line(data, options);
+</script>

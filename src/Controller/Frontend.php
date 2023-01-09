@@ -63,8 +63,8 @@ class Frontend extends Controller {
 		$this->WP->wp_enqueue_style( 'animatecss', 'vendor/animatecss/animate.min.css' );
 
 		/** Load Plugin Assets */
-		$this->WP->wp_enqueue_style( 'calo', 'build/css/backend.min.css' );
-		$this->WP->wp_enqueue_script( 'calo', 'build/js/backend/backend.min.js', array(), '', true );
+		$this->WP->wp_enqueue_style( 'calo', 'build/css/frontend.min.css' );
+		$this->WP->wp_enqueue_script( 'calo', 'build/js/backend/frontend.min.js', array(), '', true );
 	}
 
 	public function calo_admin( $atts ) {

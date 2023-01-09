@@ -1,6 +1,6 @@
 <div class="calo-container">
-	<div class="grid grid-cols-12 gap-4">
-		<div class="col-span-3">
+	<div class="md:grid md:grid-cols-12 md:gap-4">
+		<div class="m-4 md:m-0 md:col-span-3">
 
 			<!-- Start Profile -->
 			<div class="shadow-md shadow-gray-200/50 rounded-md bg-white">
@@ -36,12 +36,12 @@
 			<!-- End Profile -->
 
 		</div>
-		<div class="col-span-9">
+		<div class="m-4 md:m-0 md:col-span-9">
 			<!-- Start Profile -->
-			<div class="shadow-md shadow-gray-200/50 rounded-md bg-white p-12">
+			<div class="shadow-md shadow-gray-200/50 rounded-md bg-white p-4 md:p-12">
 
-				<div class="bg-slate-50 px-8 py-6 rounded-md mb-12">
-					<div class="flex justify-between">
+				<div class="bg-gray-50 px-8 py-6 rounded-md mb-12 flex flex-col md:block gap-y-4 md:gap-y-0">
+					<div class="flex flex-col md:flex-row md:justify-between">
 						<span class="font-semibold">Policy Debate Workshop by Youth Leadership Council</span>
 						<span class="font-semibold text-orange-400">$ 50-70</span>
 					</div>
@@ -55,74 +55,102 @@
 					</div>
 				</div>
 
-				<div class="grid grid-cols-12 gap-6">
+				<div class="grid grid-cols-12 gap-4">
 
-					<div class="col-span-8">
+					<div class="col-span-12 md:col-span-8">
 
-						<div class="rounded-md border border-gray-100">
-							<div class="px-6 py-4 border-b border-gray-100 font-semibold">
+						<div class="rounded-md border border-gray-100 divide-y divide-gray-100">
+							<div class="px-6 py-4 font-semibold">
 								Total number of Ticket Sold
 							</div>
+
 							<div class="grid grid-cols-12 py-2">
-								<div class="col-span-2 text-center">
-									<i class="fas fa-ticket-alt text-3xl text-sky-400"></i>
+								<div class="col-span-3 md:col-span-2 text-center">
+									<i class="fas fa-ticket-alt text-2xl md:text-3xl text-sky-400"></i>
 								</div>
-								<div class="col-span-5 flex flex-col">
-									<span>Basic General Admission</span>
+								<div class="col-span-9 md:col-span-5 flex flex-col pb-2 md:pb-0">
+									<span class="text-sm md:text-base">Basic General Admission</span>
 									<span class="text-orange-400">$500</span>
 								</div>
-								<div class="col-span-5 flex divide-x text-center">
-									<div class="flex flex-col">
-										<span class="font-bold text-2xl text-gray-500">20K</span>
-										<span class="text-sky-400 text-sm">Total Ticket</span>
+								<div class="col-span-12 md:col-span-5 flex justify-center divide-x divide-gray-100 text-center">
+									<div class="flex flex-col px-4 md:px-0">
+										<span class="font-bold text-xl md:text-2xl text-gray-500">20K</span>
+										<span class="text-sky-400 text-xs md:text-sm">Total Ticket</span>
 									</div>
-									<div class="flex flex-col">
-										<span class="font-bold text-2xl text-gray-500">10K</span>
-										<span class="text-sky-400 text-sm">Sold Ticket</span>
+									<div class="flex flex-col px-4 md:px-0">
+										<span class="font-bold text-xl md:text-2xl text-gray-500">10K</span>
+										<span class="text-sky-400 text-xs md:text-sm">Sold Ticket</span>
 									</div>
-									<div class="flex flex-col">
-										<span class="font-bold text-2xl text-gray-500">10K</span>
-										<span class="text-sky-400 text-sm">Available Ticket</span>
+									<div class="flex flex-col px-4 md:px-0">
+										<span class="font-bold text-xl md:text-2xl text-gray-500">10K</span>
+										<span class="text-sky-400 text-xs md:text-sm">Available Ticket</span>
 									</div>
 								</div>
 							</div>
+
 							<div class="grid grid-cols-12 py-2">
-								<div class="col-span-2 text-center">
-									<i class="fas fa-ticket-alt text-3xl text-sky-400"></i>
+								<div class="col-span-3 md:col-span-2 text-center">
+									<i class="fas fa-ticket-alt text-2xl md:text-3xl text-sky-400"></i>
 								</div>
-								<div class="col-span-5 flex flex-col">
-									<span>Standard General Admission</span>
+								<div class="col-span-9 md:col-span-5 flex flex-col pb-2 md:pb-0">
+									<span class="text-sm md:text-base">Standard General Admission</span>
 									<span class="text-orange-400">$500</span>
 								</div>
-								<div class="col-span-5 flex divide-x text-center">
-									<div class="flex flex-col">
-										<span class="font-bold text-2xl text-gray-500">33K</span>
-										<span class="text-sky-400 text-sm">Total Ticket</span>
+								<div class="col-span-12 md:col-span-5 flex justify-center divide-x divide-gray-100 text-center">
+									<div class="flex flex-col px-4 md:px-0">
+										<span class="font-bold text-xl md:text-2xl text-gray-500">33K</span>
+										<span class="text-sky-400 text-xs md:text-sm">Total Ticket</span>
 									</div>
-									<div class="flex flex-col">
-										<span class="font-bold text-2xl text-gray-500">12K</span>
-										<span class="text-sky-400 text-sm">Sold Ticket</span>
+									<div class="flex flex-col px-4 md:px-0">
+										<span class="font-bold text-xl md:text-2xl text-gray-500">12K</span>
+										<span class="text-sky-400 text-xs md:text-sm">Sold Ticket</span>
 									</div>
-									<div class="flex flex-col">
-										<span class="font-bold text-2xl text-gray-500">21K</span>
-										<span class="text-sky-400 text-sm">Available Ticket</span>
+									<div class="flex flex-col px-4 md:px-0">
+										<span class="font-bold text-xl md:text-2xl text-gray-500">21K</span>
+										<span class="text-sky-400 text-xs md:text-sm">Available Ticket</span>
 									</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="rounded-md border border-gray-100 grid grid-cols-12 mt-6">
-							<div class="col-span-8 pl-6 py-4 flex flex-col">
+							<div class="col-span-9 pl-6 py-4 flex flex-col border-r border-gray-100">
 								<span>Registered Participant</span>
 								<span class="text-orange-400">Total number of registered participant</span>
 							</div>
-							<div class="col-span-4 bg-gray-50 font-bold text-3xl text-center">
-								<span class="inline-block align-middle">12K</span>
+							<div class="col-span-3 bg-gray-50 font-bold text-3xl flex justify-center items-center">
+								<span>12K</span>
 							</div>
 						</div>
 
 					</div>
-					<div class="col-span-2">
+					<div class="col-span-12 md:col-span-4 rounded-md border border-gray-100">
+
+						<div class="divide-y divide-gray-100">
+							<div class="px-6 py-4 font-semibold">
+								Attendees
+							</div>
+
+							<div class="p-6">
+								<div class="flex justify-center items-center w-5/6 mx-auto pb-6">
+									<svg viewBox="0 0 36 36" class="circular-chart">
+										<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+										<path class="circle stroke-sky-400" stroke-dasharray="45, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+										<text x="18" y="20.35" class="percentage">+45%</text>
+									</svg>
+								</div>
+
+								<div class="flex justify-between">
+									<div class="border-l-4 pl-3 flex flex-col text-xs" style="border-color: #1f1671;">
+										<span>12500</span>
+										<span class="text-gray-300">Attendees</span>
+									</div>
+									<div class="border-l-4 pl-3 flex flex-col text-xs" style="border-color: #4f78e0;">
+										<span>2450</span>
+										<span class="text-gray-300">Confirmed Attendees</span>
+									</div>
+								</div>
+							</div>
 
 					</div>
 

@@ -45,7 +45,6 @@ class Backend extends Controller {
 	public function backend_enequeue() {
 		global $post;
 		define( 'CALO_SCREEN', json_encode( $this->WP->getScreen() ) );
-        $default = $this->Framework->getConfig()->default;
 		$config  = $this->Framework->getConfig()->options;
         $screen  = $this->WP->getScreen();
 		$screen->base = str_replace(" ","-", $screen->base);
